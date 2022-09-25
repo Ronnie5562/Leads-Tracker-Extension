@@ -1,0 +1,79 @@
+
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    max-width: 900px;
+    background-image: url(abstract-g9697a2529_1920.jpg);
+    animation-name: Bkground;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    background-size: cover;
+}
+
+input{
+    width: 100%;
+    margin: auto;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-sizing:border-box ;
+    border-color: blue;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background:rgb(72, 72, 170);
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    animation-name: Blinks;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#delete-btn{
+    color:blue;
+    background: rgb(168, 157, 192);
+    border: 1px solid white;
+}
+ul{
+    margin-top: 20px;
+    list-style-type:none;
+    padding-left: 0px;
+}
+li{
+    font-size: 20px;
+    margin-top: 5px;
+}
+a{
+    color:white;
+}
+@keyframes Blinks {
+    30%{
+        border-color: white;
+    }
+    65%{
+        border-color: blue;
+    }
+    92%{
+        border-color: black;
+    }
+
+}
+@keyframes Bkground {
+    33.3%{
+        background-image: url(abstract-g9697a2529_1920.jpg);
+    }
+    66.6%{
+        background-image: url(studio-g2c5912cc6_1920.jpg);
+    }
+    99.9%{
+        background-image: url(technology-g396665c4c_1920.jpg);
+    }
+
+}
