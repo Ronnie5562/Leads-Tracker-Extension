@@ -1,3 +1,5 @@
+//              Leads Tracker App
+// I Learnt How To Use LocalStorage
 let myLeads = [] 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
@@ -48,5 +50,3 @@ tabBtn.addEventListener("click", function(){
 
     })
 })
-
-
