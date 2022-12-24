@@ -9,7 +9,6 @@ const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 if (leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
     render(myLeads)
-     
 }
 
 function render(leads){
@@ -34,11 +33,13 @@ inputBtn.addEventListener("click", function() {
     console.log(localStorage.getItem("myLeads"))
 
 })
+
 deleteBtn.addEventListener("dblclick", function(){
     localStorage.clear()
     myLeads = []
     ulEl.innerHTML = ""
 })
+
 tabBtn.addEventListener("click", function(){
     chrome.tabs.query({active:true, currentWindow:true}, function(tabs){
         myLeads.push(tabs[0].url)
